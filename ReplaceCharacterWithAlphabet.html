@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--2) Write a JavaScript program to replace every character in a given string with the character following it in the alphabet.  -->
+    <script>
+        function ReplaceWithAlphabet(text){
+            let s = text.split('');
+            console.log(s);
+
+            for(let i=0;i<s.length;i++){
+                switch(s[i]){
+                    case ' ':
+                    break;
+                    case 'z':
+                    s[i]='a';
+                    break;
+                    case 'Z':
+                    s[i]='A';
+                    break;
+                    default:
+                    s[i]=String.fromCharCode(s[i].charCodeAt(0)+1 );
+                }
+            }
+            return s.join('');
+        }
+        console.log(ReplaceWithAlphabet('Shubham'));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

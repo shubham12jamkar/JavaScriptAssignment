@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--8) Write a JavaScript program to count the number of vowels in a given string.  -->
+    <script>
+        function equal_pt(str)
+        { 
+            var str_p = str.replace(/[^p]/g, "").length;
+            var str_t = str.replace(/[^t]/g, "").length;
+
+            // var p_num = str_p.length;
+            // var s_num = str_t.length;
+
+            return str_p === str_t;
+         
+        }
+        console.log(equal_pt("pabcptaat"));
+        console.log(equal_pt("panpmt"));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
